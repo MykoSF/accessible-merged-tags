@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exemplo de Site Acessível</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <h1>Meu Site Acessível</h1>
+      <!-- Navegação -->
+      <nav aria-label="Menu Principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+      <!-- Seção Início -->
+      <section id="inicio">
+        <h2>Início</h2>
+        <p>Bem-vindo ao meu site acessível!</p>
+
+        <!-- Imagem com descrição alternativa -->
+        <img
+          src="https://steamuserimages-a.akamaihd.net/ugc/2319980071298431643/13F80F955F3612EF407370E522ABA956D690374E/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
+          alt="Gato de um meme da internet codinomeado 'Chipi Chipi, Chapa Chapa'"
+        />
+
+        <!-- Formulário de Contato -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Formulário de Contato</legend>
+            <div>
+              <!-- Rótulo para campo de texto -->
+              <label for="nome">Nome:</label>
+
+              <!-- Campo de texto com rótulo associado e descrição acessível -->
+              <input type="text" id="nome" aria-label="Nome" required />
+            </div>
+            <div>
+              <!-- Rótulo para campo de email -->
+              <label for="email">Email:</label>
+
+              <!-- Campo de email com rótulo associado e descrição acessível -->
+              <input type="email" id="email" aria-label="Email" required />
+            </div>
+            <div>
+              <!-- Rótulo para campo de mensagem -->
+              <label for="mensagem">Mensagem:</label>
+
+              <!-- Área de texto com rótulo associado e descrição acessível -->
+              <textarea
+                id="mensagem"
+                aria-label="Digite sua mensagem"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Botão de envio com descrição acessível -->
+            <button type="submit" aria-label="Enviar">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <!-- Seção Sobre -->
+      <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Informações sobre o site acessível.</p>
+      </section>
+
+      <!-- Seção Contato -->
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco.</p>
+
+        <!-- Informações de contato com descrições acessíveis -->
+        <address>
+          Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a
+          ><br />
+          Telefone: 123-456-7890
+        </address>
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>
+        &copy; 2023 Meu Site Acessível. Todos os direitos reservados para Maykon
+        Santana Fonseca.
+      </p>
+    </footer>
+    
+  </body>
+</html>
